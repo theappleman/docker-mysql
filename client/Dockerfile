@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:centos6
 
 MAINTAINER Daniel Cordero <docker@xxoo.ws>
 
