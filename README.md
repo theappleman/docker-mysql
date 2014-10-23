@@ -13,6 +13,7 @@ $ docker run -d -v /data/mysql:/var/lib/mysql applehq/mysql:server mysqld_safe -
 
 $ docker run -it -v /data/mysql/mysql.sock:/var/lib/mysql/mysql.sock applehq/mysql:server mysql_secure_installation
 
-# touch /var/log/holland.log
-$ docker run -v /var/log/holland.log:/var/log/holland/holland.log -v /var/lib/mysqlbackup:/var/spool/holland -v /data/mysql/mysql.sock:/var/lib/mysql/mysql.sock applehq/mysql:holland holland bk
+# mkdir /var/log/holland
+# touch /var/log/holland/holland.log
+$ docker run -v /var/log/holland/holland.log:/var/log/holland/holland.log -v /var/lib/mysqlbackup:/var/spool/holland -v /data/mysql/mysql.sock:/var/lib/mysql/mysql.sock applehq/mysql:holland holland bk
 ```
