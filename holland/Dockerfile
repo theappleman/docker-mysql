@@ -1,4 +1,4 @@
-FROM applehq:client
+FROM applehq/mysql:client
 
 MAINTAINER Daniel Cordero <docker@xxoo.ws>
 
